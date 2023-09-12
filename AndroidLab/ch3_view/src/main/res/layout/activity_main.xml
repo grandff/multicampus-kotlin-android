@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" > <!-- 세로 방향으로 설정 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://www.google.com 하하하하호호호"
+        android:autoLink="web"
+        android:lines="1" /> <!-- autoLink : 웹 링크가 있으면 연결 / lines : 글자줄수 -->
+
+    <EditText
+        android:id="@+id/editViewTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:gravity="center"/>
+
+    <!-- 안드로이드 모든 뷰에는 유저클릭 이벤트가 가능함
+     포커스를 가지지 못하는 뷰인 TextView, ImageView에 클릭 이벤트를 부여하려면 clickable=true 선언-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_test"
+        android:clickable="true" />  <!-- 이미지는 보통 wrap / wrap으로 사용함 -->
+
+    <Button
+        android:id="@+id/buttonTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click me" />
+
+</LinearLayout>
