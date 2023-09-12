@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">   <!-- 정 중앙정렬 -->
+
+    <!-- 연락처추가 버튼 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="56dp"
+        >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/add"
+            app:tint="#00FF00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처에 추가"
+            android:textColor="#00FF00"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 전화번호 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="02-120-1234"
+        android:textSize="40sp"
+        />
+
+    <!-- 키패드 -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        android:columnCount="3"
+        >
+        <!-- GridLayout에 추가되는 뷰의 width, height는 기본 wrap_content가 적용되어있음 -->
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="2"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="3"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="4"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="5"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="6"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="7"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="8"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
+            android:text="9"
+            android:textStyle="bold"/>
+    </GridLayout>
+
+    <!-- 버튼모음 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/video" />
+        <!-- relativelayout이므로 toRigthOf를 통해 배치시킴 -->
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/video"
+            android:src="@drawable/call" />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/call"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+</LinearLayout>
