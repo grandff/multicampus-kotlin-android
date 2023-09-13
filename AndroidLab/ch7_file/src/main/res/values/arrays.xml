@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 문자열 어러개가 한꺼번에 사용된다면.. 배열 리소스로.. -->
+    <string-array name ="my_color">
+        <item>빨강</item>
+        <item>파랑</item>
+        <item>초록</item>
+    </string-array>
+</resources>
