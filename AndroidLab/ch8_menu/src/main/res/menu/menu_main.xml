@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+android platform api 에서 처리하는 속성은 표준 속성..
+http://schemas.android.com/apk/res/android 로 namespace 선언..
+
+비 표준에서 처리하는 속성은 표준 속성이 아니다..
+별도의 namespace 선언해서 등록해야 한다..
+http://schemas.android.com/apk/res-auto
+
+ActionBar - api level 11 버전에서 제공, 버전 변경되면서 계속 바뀌어서..
+ActionBar 를 이용하려면 하위호환성 고려하면서..
+ActionBar 는 Activity 구성요소..
+Activity 의 하위호환성을 해결해주기 위한 클래스가 AppCompatActivity 이다..
+appcompat 라이브러리.. 표준은 아니다.
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu1"
+        android:title="menu1"/>
+    <item
+        android:id="@+id/menu2"
+        android:title="menu2"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu3"
+        android:title="menu3"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+</menu>
