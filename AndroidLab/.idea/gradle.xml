@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/ch7_file" />
             <option value="$PROJECT_DIR$/ch7_preference" />
             <option value="$PROJECT_DIR$/ch8_menu" />
+            <option value="$PROJECT_DIR$/ch9_jetpack" />
           </set>
         </option>
       </GradleProjectSettings>

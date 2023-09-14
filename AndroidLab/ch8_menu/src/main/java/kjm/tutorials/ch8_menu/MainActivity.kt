@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.SearchView.OnQueryTextListener
+import kjm.tutorials.ch8_menu.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         //값이 아니라 타입으로 조건이 가능하고..
         //범위로도 조건 가능하고..
         //when 에 값을 명시하지 않을 수도 있고..
-        when(item.itemId){
+       when(item.itemId){
             R.id.menu1 -> Log.d("kkang", "menu1 click")
             R.id.menu2 -> Log.d("kkang", "menu2 click")
         }
